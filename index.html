@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    [17:32, 5/3/2025] +1 800-242-8478: <style>
+    <style>
         body,
         html {
             margin: 0;
@@ -15,7 +15,7 @@
         }
 
         .hero-section {
-            background: url('https://your-image-url.com/leaf-background.jpg') no-repeat center center/cover;
+            background: url("images/logo.png") no-repeat center center/cover;
             height: 100vh;
             position: relative;
             color: white;
@@ -25,11 +25,12 @@
         }
 
         .branding {
+            text-shadow: 5px 10px 15px black;
             flex: 1;
         }
 
         .branding h1 {
-            font-size: 60px;
+            font-size: 50px;
             margin: 0;
             font-weight: bold;
         }
@@ -38,6 +39,7 @@
             font-size: 14px;
             display: block;
             margin-top: 10px;
+            font-weight: bold;
         }
 
         .product-image {
@@ -78,6 +80,79 @@
             bottom: 15%;
             left: 15%;
         }
+
+        .banner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background: #e0f4ff;
+        }
+
+        .banner-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .banner-text h2 {
+            font-size: 32px;
+            color: #234b63;
+            margin-bottom: 20px;
+        }
+
+        .launch-offer {
+            display: inline-block;
+            background: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #234b63;
+            font-weight: bold;
+            border: 2px dashed #234b63;
+        }
+
+        .launch-offer span {
+            background: #002b60;
+            color: white;
+            padding: 6px 12px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+
+        .banner-image {
+            flex: 1;
+            text-align: right;
+            min-width: 250px;
+        }
+
+        .banner-image img {
+            max-width: 300px;
+        }
+
+        .features-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #a8ee59;
+            padding: 15px 0;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 15px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .feature-item img {
+            height: 20px;
+            margin-right: 8px;
+        }
+    </style>
     </style>
 </head>
 
@@ -85,19 +160,51 @@
 
     <div class="hero-section">
         <div class="branding">
-            <h1>PUER</h1>
-            <span>Brand Nourish</span>
+            <h1>TheVigourCompany</h1>
+            <span>India Best Chemical Solution</span>
         </div>
 
         <div class="product-image">
-            <img src="https://your-image-url.com/pink-bottle.png" alt="PUER Bottle">
+            <img src="images/13-removebg-preview.png" alt="Toliet cleaner Bottle">
 
-            <div class="bubble bubble1">1800+ Days of Research</div>
-            <div class="bubble bubble2">Clinically Tested</div>
-            <div class="bubble bubble3">2,75,361 Households</div>
+            <div class="bubble bubble1">Best Chemical Solution</div>
+            <div class="bubble bubble2">Removes stains</div>
+            <div class="bubble bubble3">Freshness</div>
+        </div>
+    </div>
+    <div class="features-bar">
+        <div class="feature-item">
+           💩 Clean Tough Stains
+        </div>
+        <div class="feature-item">
+          🍃 Gives Freshness for long time
+        </div>
+        <div class="feature-item">
+          🧪 Best Chemical Solution
+        </div>
+        <div class="feature-item">
+           💚 Safe For use
+        </div>
+        <div class="feature-item">
+           ⌛ Instant Result
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+            <h2>A DELIGHT FOR ALL YOUR WHITES!</h2>
+            <div class="launch-offer">
+                JUST LAUNCHED <span>@Buy 1 Get 1 offer</span>
+            </div>
+        </div>
+        <div class="banner-image">
+            <div style="display: flex;">
+            <img style="width: 1500px;" src="images/14-removebg-preview.png" alt="Fabric Whitener Tablet">
+            <img style="width: 250px;" src="images/13-removebg-preview.png" alt="Fabric Whitener Tablet">
+            </div>
         </div>
     </div>
 
+   
 </body>
 
 </html>
