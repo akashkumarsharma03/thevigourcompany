@@ -6,32 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheVigourCompany</title>
     <style>
-        body,
-        html {
+        body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
             font-family: Arial, sans-serif;
         }
 
         .hero-section {
             background: url("images/logo.png") no-repeat center center/cover;
             height: 100vh;
-            position: relative;
-            color: white;
             display: flex;
             align-items: center;
+            color: white;
             padding: 0 50px;
         }
 
         .branding {
-            text-shadow: 5px 10px 15px black;
             flex: 1;
+            text-shadow: 5px 10px 15px black;
         }
 
         .branding h1 {
             font-size: 50px;
-            margin: 0;
             font-weight: bold;
         }
 
@@ -44,14 +40,13 @@
 
         .product-image {
             flex: 1;
-            position: relative;
             display: flex;
             justify-content: center;
+            position: relative;
         }
 
         .product-image img {
             height: 400px;
-            z-index: 1;
         }
 
         .bubble {
@@ -84,24 +79,20 @@
         .features-bar {
             display: flex;
             justify-content: space-around;
-            align-items: center;
             background: #a8ee59;
             padding: 15px 0;
             color: white;
-            flex-wrap: wrap;
         }
 
         .feature-item {
             display: flex;
             align-items: center;
-            margin: 10px 15px;
             font-size: 15px;
             font-weight: bold;
         }
 
         .banner {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 40px;
@@ -110,7 +101,6 @@
 
         .banner-text {
             flex: 1;
-            min-width: 250px;
         }
 
         .banner-text h2 {
@@ -141,7 +131,6 @@
         .banner-image {
             flex: 1;
             text-align: right;
-            min-width: 250px;
         }
 
         .banner-image img {
@@ -180,7 +169,6 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            margin: 10px 0;
         }
 
         .social-icons a img {
@@ -211,101 +199,16 @@
             font-size: 14px;
         }
 
-        /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            .hero-section {
-                flex-direction: column;
-                padding: 20px;
-                text-align: center;
-                height: auto;
+        /* Scaling for small screens without breaking layout */
+        @media (max-width: 600px) {
+            body {
+                zoom: 0.8;
             }
+        }
 
-            .branding h1 {
-                font-size: 36px;
-            }
-
-            .branding span {
-                font-size: 12px;
-            }
-
-            .product-image {
-                margin-top: 20px;
-            }
-
-            .product-image img {
-                height: 250px;
-            }
-
-            .bubble {
-                padding: 10px;
-                font-size: 12px;
-            }
-
-            .bubble1,
-            .bubble2,
-            .bubble3 {
-                position: static;
-                margin: 5px;
-                display: inline-block;
-            }
-
-            .features-bar {
-                flex-direction: column;
-                padding: 10px 0;
-            }
-
-            .feature-item {
-                font-size: 14px;
-                margin: 6px 0;
-            }
-
-            .banner {
-                flex-direction: column;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .banner-text h2 {
-                font-size: 26px;
-            }
-
-            .launch-offer {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-
-            .launch-offer span {
-                padding: 4px 10px;
-                font-size: 13px;
-            }
-
-            .banner-image {
-                margin-top: 20px;
-                text-align: center;
-            }
-
-            .footer {
-                flex-direction: column;
-                text-align: center;
-                padding: 30px 20px;
-            }
-
-            .footer-section {
-                margin: 15px 0;
-            }
-
-            .footer h3 {
-                font-size: 22px;
-            }
-
-            .social-icons {
-                justify-content: center;
-                gap: 10px;
-            }
-
-            .footer-bottom {
-                margin-top: 20px;
-                font-size: 11px;
+        @media (max-width: 400px) {
+            body {
+                zoom: 0.7;
             }
         }
     </style>
